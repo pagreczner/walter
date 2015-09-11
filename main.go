@@ -31,12 +31,12 @@ func main() {
 	columnName := os.Args[3]
 
 	var enumValues []string
-	var defaultEnumValue string
+	var defaultEnumValue string = "''"
 	if len(os.Args) > 4 {
 		for _, v := range os.Args[4:] {
 			enumValues = append(enumValues, "'"+v+"'")
 		}
-		defaultEnumValue = os.Args[4]
+		defaultEnumValue = "'" + os.Args[4] + "'"
 	}
 
 	enumString := strings.Join(enumValues, ",")
