@@ -1,0 +1,1 @@
+Walter is a utility to quickly generate PostgreSQL type change migrations.
