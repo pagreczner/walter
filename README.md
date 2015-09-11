@@ -1,5 +1,10 @@
 Walter is a utility to quickly generate PostgreSQL type change migrations.
 
+## Install
+```
+go get github.com/pagreczner/walter
+```
+
 ## Usage
 ```
 walter <type_name> <table_name> <col_name> [...enum_values]
